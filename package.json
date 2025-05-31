@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/simyeekai/Finance-Tracker/issues"
   },
-  "homepage": "https://github.com/simyeekai/Finance-Tracker#readme"
+  "homepage": "https://github.com/simyeekai/Finance-Tracker#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.1",
+    "react-scripts": "^5.0.1"
+  }
 }
