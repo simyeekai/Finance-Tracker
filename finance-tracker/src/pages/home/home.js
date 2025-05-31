@@ -1,10 +1,9 @@
-import styles from './home.module.css'
-import { View, Text} from "react-native"
+import styles from './home.module.css';
 
 export default function Home() {
     return (
-        <view>
-            <text> home </text>
-        </view>
+        <div>
+            Home
+        </div>
     )
 }
