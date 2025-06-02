@@ -10,6 +10,8 @@
     margin: 0 auto;
     max-width: 960px;
     align-items: center;
+    list-style: none;
+    padding: 0;
   }
   .title {
     margin-right: auto;
