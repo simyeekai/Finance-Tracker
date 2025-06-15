@@ -9,9 +9,9 @@ export default function Signup() {
     const [displayName, setDisplayName] = useState('');
     const { signup, isPending, error } = useSignup()
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        signup(email, password, displayName)
+        await signup(email, password, displayName)
     }
 
     return (

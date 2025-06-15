@@ -7,11 +7,11 @@ import styles from './login.module.css'
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const { login, error, isPending } = useLogin()
+  const { login, isPending, error } = useLogin()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    login(email, password)
+    await login(email, password)
   }
 
   return (

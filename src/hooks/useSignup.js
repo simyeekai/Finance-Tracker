@@ -43,5 +43,5 @@ export const useSignup = () => {
         return () => setIsCancelled(true)
     }, [])
 
-    return { error, isPending, signup }
+    return { signup, isPending, error }
 }
