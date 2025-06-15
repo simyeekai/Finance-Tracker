@@ -35,6 +35,6 @@ export const useLogin = () => {
         return () => setIsCancelled(true)
     }, [])
 
-    return { login, error, isPending }
+    return { login, isPending, error }
 
 }
