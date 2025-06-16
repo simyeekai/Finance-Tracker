@@ -1,5 +1,5 @@
 import { useReducer, useEffect, useState, useSyncExternalStore } from "react";
-import { projectFireStore, timestamp } from "../firebase/config";
+import { projectFirestore, timestamp } from "../firebase/config";
 
 let initialState = {
     document: null,
@@ -25,7 +25,7 @@ export const useFirestore = (collection) => {
     const [response, dispatch] = useReducer(firestoreReducer, initialState);
     const [isCancelled, setIsCancelled] = useState(false)
 
-    const ref = projectFireStore.collection(collection)
+    const ref = projectFirestore.collection(collection)
 
     const dispatchIfNotCancelled = (action) => {
         if (!isCancelled) {
@@ -46,7 +46,6 @@ export const useFirestore = (collection) => {
         }
     }
 
-    // delete document
     const deleteDocument = async (id) => {
 
     }
